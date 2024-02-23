@@ -1,0 +1,39 @@
+▼ディレクトリ作成
+mkdir git_challenge
+
+▼ディレクトリ移動
+cd git_challenge
+
+▼ローカルリポジトリ作成
+git init
+
+※txtファイル追加
+
+▼ワークツリーの変更をすべてインデックスに登録
+git add .
+
+▼最初のコミット
+git commit -m "最初のコミット"
+
+※txtファイルに日本語訳を追加
+
+▼ワークツリーの変更をすべてインデックスに登録
+git add .
+
+▼2回目のコミット
+git commit -m "日本語訳を追記"
+
+▼コミットログを表示
+git log --oneline
+
+c89eeb3 (HEAD -> main) 日本語訳を追記
+5e9e52e 最初のコミット
+
+※GitHubでリモートリポジトリ作成
+
+▼GitHubのリポジトリをリモートとして追加
+git remote add origin https://github.com/ando-2424/git-basic-kadai.git
+
+▼リモートのmainブランチにプッシュ
+git push -u origin main
+
